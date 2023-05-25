@@ -260,7 +260,7 @@ public class MainActivity extends AppCompatActivity {
 
     public String getName(double latitude, double longitude) {
 
-        String url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latitude + "," + longitude + "&key=AIzaSyB3-ALdFxyLrXd-BZrDgXa6s7gvnKsbrRw";
+        String url = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + latitude + "," + longitude + "&key=";
         RequestQueue queue = Volley.newRequestQueue(this);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
                 response -> {
